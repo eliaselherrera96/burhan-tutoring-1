@@ -1,0 +1,29 @@
+{
+  "name": "burhan",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rm -rf dev-serve && parcel public/index.html --dist-dir dev-serve",
+    "build": "rm -rf build && parcel build public/index.html --dist-dir build --public-url ./",
+    "publish": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliaselherrera96/burhan-tutoring-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliaselherrera96/burhan-tutoring-1/issues"
+  },
+  "homepage": "https://github.com/eliaselherrera96/burhan-tutoring-1#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.7.0"
+  }
+}
